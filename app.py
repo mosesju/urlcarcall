@@ -46,8 +46,8 @@ def makeWebhookResult(data):
     modelUrl = Model_Url(classUrl,premodel,className,model,postmodel)
     print (modelUrl)
     return{
-        "text": text,
-        "displayText": text,
+        "speech": modelUrl,
+        "displayText": modelUrl,
         "source": "getUrl"
     }
 

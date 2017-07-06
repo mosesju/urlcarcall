@@ -44,10 +44,11 @@ def makeWebhookResult(data):
     postmodel="V"
     classUrl = Class_Url(oUrl,className)
     modelUrl = Model_Url(classUrl,premodel,className,model,postmodel)
+    speech = "Here is your URL " + modelUrl
     print (modelUrl)
     return{
-        "speech": modelUrl,
-        "displayText": modelUrl,
+        "speech": speech,
+        "displayText": speech,
         "source": "getUrl"
     }
 
